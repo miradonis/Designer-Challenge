@@ -49,21 +49,22 @@ body header {
     background-image: url("../img/ilustracion1.png");
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 50% auto;
-    height: 70%;
+    background-size: 53% auto;
     width: 100%;
+    padding-bottom: 14%;
 }
 
 /*---------------LOGO__PARAGRAPH-------------*/
 .logo__paragraph {
     display: flex;
     gap: 0 10px;
-    height: 10vh;
     width: 20vw;
+    height: 10vh;
     padding: 5% 0 0 7%;
 }
 
 .logo__paragraph img {
+    display: flex;
     height: 4vh;
 }
 
@@ -78,29 +79,25 @@ body header {
 
 /*-------------HEADING__PARAGRAPH-----------*/
 .heading__pic {
-    display: flex;
-    align-items: center;
-    height: 25vh;
-    margin-top: 5vh;
+    width: 40vw;
 }
 
 .heading__paragraph {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
     margin-left: 13vw;
+    display: inline;
 }
 
 .heading__paragraph h1 {
     font-family: Roboto-Bold;
-    font-size: 2.5rem;
-    width: 40vw;
-    margin-bottom: 2vh;
+    font-size: 2rem;
+    width: 90%;
+    margin: 8% 0 10% 15%;
 }
 
 .heading__paragraph p {
     font-family: Roboto-Light;
-    width: 45vw;
+    width: 90%;
+    margin: 0 0 10% 15%;
 }
 
 .heading__paragraph p::after {
@@ -108,35 +105,38 @@ body header {
     background-size: 100%;
     content: "";
     display: inline-block;
-    width: 25px;
-    height: 20px;
+    width: 20px;
+    height: 15px;
 }
 
-.people {
+/* .people {
     height: 32vh;
     position: absolute;
     left: 50%;
     top: 0%;
-}
+} */
 
 .p__alone {
     font-family: Roboto-Bold;
     color: #ff3571;
-    margin: 4vh 0 10vh 13vw;
+    margin: 5% 0 0 6%;
+    width: 24%;
 }
 
 .p__alone span {
     letter-spacing: -1px;
 }
 
-/*-------------SECTION GALLERY-----------*/
+/*===========================================================
+--------------------SECTION GALLERY-------------------
+============================================================*/
 #gallery {
-    height: 35vh;
+    height: 30vh;
     background-image: url("../img/images.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 15vh;
+    background-size: cover;
+    margin: 5% 0 15% 0;
 }
 
 /*-------------A LOT OF TEXT-----------*/
@@ -270,6 +270,7 @@ body header {
 .steps {
     width: 50%;
     height: auto;
+    object-fit: contain;
 }
 
 .num {
