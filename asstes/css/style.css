@@ -1,0 +1,342 @@
+/*===============================================
+Colors:
+#0b0c17 
+#ff3571 
+#dddddd 
+#3C30FF 
+#FFF 
+#000
+----------------------------------
+Font:
+Roboto
+===============================================*/
+
+/*=============================================
+                    General
+=============================================*/
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url("../font/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("../font/Roboto/Roboto-Light.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto-Regular;
+    background-color: #eeeeee;
+}
+
+/*=============================================
+                    HEADER
+=============================================*/
+body header {
+    background-image: url("../img/ilustracion1.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    height: 70%;
+    width: 100%;
+}
+
+/*---------------LOGO__PARAGRAPH-------------*/
+.logo__paragraph {
+    display: flex;
+    gap: 0 10px;
+    height: 10vh;
+    width: 20vw;
+    padding: 5% 0 0 7%;
+}
+
+.logo__paragraph img {
+    height: 4vh;
+}
+
+.logo__paragraph div span {
+    font-family: Roboto-Bold;
+    font-size: 1.5rem;
+}
+
+.logo__paragraph div p {
+    margin-bottom: .5vh;
+}
+
+/*-------------HEADING__PARAGRAPH-----------*/
+.heading__pic {
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    margin-top: 5vh;
+}
+
+.heading__paragraph {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 13vw;
+}
+
+.heading__paragraph h1 {
+    font-family: Roboto-Bold;
+    font-size: 2.5rem;
+    width: 40vw;
+    margin-bottom: 2vh;
+}
+
+.heading__paragraph p {
+    font-family: Roboto-Light;
+    width: 45vw;
+}
+
+.heading__paragraph p::after {
+    background-image: url("../img/rocket.png");
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+}
+
+.people {
+    height: 32vh;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+}
+
+.p__alone {
+    font-family: Roboto-Bold;
+    color: #ff3571;
+    margin: 4vh 0 10vh 13vw;
+}
+
+.p__alone span {
+    letter-spacing: -1px;
+}
+
+/*-------------SECTION GALLERY-----------*/
+#gallery {
+    height: 35vh;
+    background-image: url("../img/images.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 15vh;
+}
+
+/*-------------A LOT OF TEXT-----------*/
+#text__icons {
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#text__icons h2 {
+    font-family: Roboto-Bold;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+#text__icons h2::after {
+    background-image: url("../img/idea.png");
+    background-size: 100%;
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+/*
+    --------------fucking größe funktioniert nicht--------------
+*/
+
+#text__icons article .text {
+    line-height: 3vh;
+    width: 56vw;
+    text-align: left;
+    margin: 0 auto 10vh auto;
+}
+
+/*----------------------ONLY HEADING--------------------*/
+.only__paragraph {
+    width: 65vw;
+    margin: 10% 0 0 6%;
+}
+
+#text__icons .only__paragraph p:nth-of-type(1) {
+    font-family: Roboto-Bold;
+    font-size: 3rem;
+    line-height: 5vh;
+}
+
+/*------------------------ICONS------------------------*/
+.icons__text {
+    display: flex;
+    flex-direction: column;
+    width: 56vw;
+    margin: 20% 0 0 20%;
+}
+
+.icons__text h3 {
+    font-family: Roboto-Bold;
+    font-size: 1.3rem;
+    margin: 10% 0 3% 0;
+}
+
+.icons__text h3:nth-of-type(1)::before {
+    background-image: url("../img/title02.svg");
+        background-size: 100%;
+        content: "";
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+}
+
+.icons__text h3:nth-of-type(2)::before {
+    background-image: url("../img/title04.svg");
+    background-size: 100%;
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.icons__text h3:nth-of-type(3)::before {
+    background-image: url("../img/title01.svg");
+    background-size: 100%;
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.icons__text h3:nth-of-type(4)::before {
+    background-image: url("../img/title03.svg");
+    background-size: 100%;
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.icons__text p {
+    text-align: left;
+    margin-bottom: 2vh;
+}
+
+/*----------------CHALLENGE__STEPS----------------*/
+#challenge__steps {
+    margin-top: 20vh;
+    padding: 0 7% 0 10%;
+}
+
+#challenge__steps article {
+    text-align: center;
+}
+
+#challenge__steps h2 {
+    font-family: Roboto-Bold;
+    font-size: 3rem;
+}
+
+#challenge__steps article .description {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    width: 60vw;
+    margin: 3vh auto 6vh auto;
+}
+
+/*-------------------PIC & TEXT---------------------*/
+.pic__text {
+    margin: 20vh 0 15vh 0;
+    display: flex;
+}
+
+.steps {
+    width: 50%;
+    height: auto;
+}
+
+.num {
+    color: #dddddd;
+    font-size: 4rem;
+    font-family: Roboto-Bold;
+    margin-bottom: 4vh;
+}
+
+.step__img {
+    margin-bottom: 2vh;
+}
+
+.steps h3 {
+    font-family: Roboto-Bold;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.step__description {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*-------------------FOOTER---------------------*/
+footer {
+    padding-bottom: 15vh;
+}
+
+footer h2 {
+    font-family: Roboto-Bold;
+    font-size: 3rem;
+    text-align: center;
+}
+
+footer .email__text {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2vh 0 2vh 0;
+}
+
+footer form input[type="email"] {
+    padding: 3% 18% 3% 20%;
+    margin: 2vh 0 0 20vw;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+footer form input[type="submit"] {
+    background-color: #ff3571;
+    padding: 2% 8% 2% 8%;
+    margin: 2vh 0 2vh 40vw;
+    border: transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+.last__paragraph {
+    margin: 7vh 0 0 4vw;
+}
+
+.last__paragraph::after {
+    background-image: url("../img/love.png");
+    background-size: 100%;
+    content: "";
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+}
